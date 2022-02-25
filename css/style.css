@@ -1,0 +1,175 @@
+body {
+	background-color: #494949;
+
+}
+
+.heading {
+	margin-bottom: 50px;
+	text-align: center;
+	color: white;
+	font-size: 30px;
+	font-family: sans-serif;
+	font-weight: 300;
+}
+
+.container {
+	overflow: hidden;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 70%;
+}
+
+.card {
+	overflow: hidden;
+	position: relative;
+	padding: 5% 0;
+	margin: 2%;	
+	text-align: center;
+	width: 20%;
+	float: left;
+	border-radius: 3px;	
+	background-color: white;
+	transition: .3s;
+	border: 5px solid white;
+	border-radius: 5px;
+}
+
+.s_icon {
+	display: block;
+	font-size: 30px;
+	color: #494949;
+}
+
+.card p {
+	font-family: sans-serif;
+	color: #D9DCD8;
+	text-transform: capitalize;
+}
+
+.checksign {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 25px solid;
+    border-color: white transparent transparent white;
+    transition: .3s;
+    opacity: 0;
+}
+
+.checksign::before {
+    content: "\f00c";
+	position: absolute;
+	top: -17px;
+	left: -17px;
+    font-family: "Font Awesome 5 Free"; 
+    font-size: 20px;
+    font-weight: 900;
+    color: white;
+    transition: .3s;
+  }
+
+
+.tick {
+	display:none;
+}
+
+
+
+/*fb*/
+.social .tick:checked ~ .card.f_card {
+	border: 5px solid #005A63;
+}
+.social .tick:checked ~ .f_card .s_icon {
+	color: #005A63;
+}
+.social .tick:checked ~ .f_card .checksign{
+	opacity: 1;
+	border-color: #005A63 transparent transparent #005A63;
+}
+
+
+/*twitter*/
+.social .tick:checked ~ .card.t_card {
+	border: 5px solid #0E98F6;
+}
+.social .tick:checked ~ .t_card .s_icon {
+	color: #0E98F6;
+}
+.social .tick:checked ~ .t_card .checksign{
+	opacity: 1;
+	border-color: #0E98F6 transparent transparent #0E98F6;
+}
+
+/*insta*/
+.social .tick:checked ~ .card.i_card {
+	border: 5px solid #EF505E;
+}
+.social .tick:checked ~ .i_card .s_icon {
+	color: #EF505E;
+}
+.social .tick:checked ~ .i_card .checksign{
+	opacity: 1;
+	border-color: #EF505E transparent transparent #EF505E;
+}
+
+/*linkedin*/
+.social .tick:checked ~ .card.l_card {
+	border: 5px solid #0B61A5;
+}
+.social .tick:checked ~ .l_card .s_icon {
+	color: #0B61A5;
+}
+.social .tick:checked ~ .l_card .checksign{
+	opacity: 1;
+	border-color: #0B61A5 transparent transparent #0B61A5;
+}
+
+/*whatsapp*/
+.social .tick:checked ~ .card.w_card {
+	border: 5px solid #13B861;
+}
+.social .tick:checked ~ .w_card .s_icon {
+	color: #13B861;
+}
+.social .tick:checked ~ .w_card .checksign{
+	opacity: 1;
+	border-color: #13B861 transparent transparent #13B861;
+}
+
+/*google+*/
+.social .tick:checked ~ .card.g_card {
+	border: 5px solid #C71918;
+}
+.social .tick:checked ~ .g_card .s_icon {
+	color: #C71918;
+}
+.social .tick:checked ~ .g_card .checksign{
+	opacity: 1;
+	border-color: #C71918 transparent transparent #C71918;
+}
+
+/*reddit*/
+.social .tick:checked ~ .card.r_card {
+	border: 5px solid #FA5D00;
+}
+.social .tick:checked ~ .r_card .s_icon {
+	color: #FA5D00;
+}
+.social .tick:checked ~ .r_card .checksign{
+	opacity: 1;
+	border-color: #FA5D00 transparent transparent #FA5D00;
+}
+
+/*quora*/
+.social .tick:checked ~ .card.q_card {
+	border: 5px solid #C63420;
+}
+.social .tick:checked ~ .q_card .s_icon {
+	color: #C63420;
+}
+.social .tick:checked ~ .q_card .checksign{
+	opacity: 1;
+	border-color: #C63420 transparent transparent #C63420;
+}
